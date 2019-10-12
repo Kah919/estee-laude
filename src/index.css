@@ -2,6 +2,20 @@
   margin: 0;
   padding: 0; 
   font-size: 18px;
+  font-family: 'Heebo', sans-serif;
+}
+
+.camera {
+  width: 65px;
+  height: 65px;
+  background: url("./images/camera.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 4%;
+  left: 5%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
 }
 
 .product__container {
@@ -18,21 +32,31 @@
   background: url("./images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1200px; 
+  height: 1500px; 
+  position: relative;
 }
 
 .img__container {
   display: grid;
   width: 60%;
   margin: 0 auto;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 14fr 1fr 1fr;
 }
 
 .img {
   background: url("./images/product.png");
   background-size: cover;
-  width: 120px;
-  height: 130px;
+  width: 150px;
+  height: 160px;
+  margin: 0 auto;
+  margin-top: 50%;
+}
+
+.ocean__img {
+  background: url("./images/cream3.png");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
   margin: 0 auto;
   margin-top: 50%;
 }
@@ -62,7 +86,8 @@
 
 .product p {
   font-size: 12px;
-  margin-top: 55%;
+  margin-top: 40%;
+  font-weight: bold;
 }
 
 .summary {
@@ -93,6 +118,16 @@
   font-size: 14px;
 }
 
+.summary3 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.summary3 p {
+  margin-top: 2%;
+  font-size: 10px;
+}
+
 .summary5 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -115,7 +150,7 @@
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 15px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #6D6D6D;
 }
 
 .ocean {
@@ -205,6 +240,14 @@
   background: url("./images/grizzly.jpg");
 }
 
+.smile {
+  background: url("./images/smile.png");
+}
+
+.pink {
+  background: url("./images/pink.png");
+}
+
 .more__products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -232,3 +275,18 @@
              0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 
+.bar {
+  background-color: #F3F3F3;
+  width: 200px;
+  height: 20px;;
+  margin: 20px auto;
+  border-radius: 20px; 
+}
+
+.thanks {
+  background: url("./images/thanks.png");
+  background-size: contain;
+  margin: 30px auto;
+  width: 280px;
+  height: 200px;
+}

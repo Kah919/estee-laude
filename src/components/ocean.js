@@ -16,14 +16,15 @@ class Ocean extends Component {
     render() {
         return(
             <div className="item__container ocean__container">
+                <div className="camera"></div>
                 <div className="img__container ocean">
                     <div className="ocean__img"></div>
-                    <div className="product"> <p className="double"> OCEAN FUND </p></div>
+                    <div className="product"> <p> OCEAN FUND </p></div>
                 </div>
 
                 <div className="summary">
                     <div className="summary2 summary__ocean">
-                        <h1>OUR MISSION</h1>
+                        <h1>Our Mission</h1>
                         <p> We are committed to helping protect marine habitats across the globe. Through awareness-raising initiatives and charitable donations by the La Mer Blue Heart Oceans Fund in support of ocean conservation projects, we strive to ensure a future with flourishing seas for generations to come. </p>
                     </div>
 
@@ -39,12 +40,14 @@ class Ocean extends Component {
 
                     <div>
                         <h3>Oceans fund raised as of 2019</h3>
+                        <div className="bar"></div>
                     </div>
 
                     <div className="sharks"></div>
                     
+                    {this.state.donate ? <div className="thanks"></div> : null}
+
                     <div className="donate_button">
-                        
                         <div className="donate" onClick={this.donate}> {this.state.donate ? <div className="donated"> ${this.state.dollar} </div> : null} Donate </div>
                     </div>
                     

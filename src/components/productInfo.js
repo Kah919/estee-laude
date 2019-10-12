@@ -1,11 +1,32 @@
 import React, { Component } from 'react';
+import { Redirect } from "react-router-dom";
+
 
 class productInfo extends Component {
+    state = {
+        redirect: false
+    }
+
+    redirect = () => {
+        this.setState({
+            redirect: true
+        })
+    }
+
+    renderRedirect = () => {
+        if(this.state.redirect) {
+            return <Redirect to={`/Ocean`}/>
+        }
+    }
+
     render() {
         return(
             <div className="item__container">
+                {this.renderRedirect()}
+                <div className="camera"></div>
                 <div className="img__container">
                     <div className="img"></div>
+                    <div></div>
                     <div className="product"> <p> PRODUCT </p></div>
                 </div>
 
@@ -20,20 +41,20 @@ class productInfo extends Component {
 
                     <div className="summary3">
                         <h1>Description</h1>
-                        <p>BIG LOREM IPSUM AYOOOOOOOOOOOO</p>
+                        <p>In our latest, limited-edition commemorative decor, this luxuriously rich cream deeply soothes and moisturizes to help heal dryness and leave skin looking naturally vibrant. Miracle Broth™—the legendary soothing elixir that flows through all of La Mer—infuses skin with sea-sourced renewing energies. Ideal for drier skin.</p>
                     </div>
 
                     <div className="border"></div>
 
-                    <div className="summary4">
+                    <div className="summary3">
                         <h1>Ingredients</h1>
-                        <p>BIG LOREM IPSUM AYOOOOOOOOOOOO</p>
+                        <p>Key Ingedients:  Miracle Broth™, Lime Tea</p>
                     </div>
 
                     <div className="border"></div>
 
                     <div className="summary5">
-                        <div className="add__button"><p>Add to Cart</p></div>
+                        <div className="add__button" onClick={this.redirect}><p>Add to Cart</p></div>
                         <div className="gift__button"><p>Add to Gift Box</p></div>
                     </div>
 

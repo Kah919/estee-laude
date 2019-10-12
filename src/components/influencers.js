@@ -4,6 +4,8 @@ class Influencers extends Component {
     render() {
         return(
             <div className="item__container">
+                <div className="camera"></div>
+
                 <div className="influencer__container">
                     <div className="img ice"></div>
                     <div className="product l"> <p> Favorite  </p></div>
@@ -14,8 +16,8 @@ class Influencers extends Component {
                 <div className="gallery">
                     <div className="panda frame"></div>
                     <div className="grizzly frame"></div>
-                    <div className="grizzly frame"></div>
-                    <div className="panda frame"></div>
+                    <div className="smile frame"></div>
+                    <div className="pink frame"></div>
                     <div className="panda frame"></div>
                     <div className="grizzly frame"></div>
                 </div>

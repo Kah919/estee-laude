@@ -5,7 +5,10 @@ import Aids from './components/aids';
 import Breast from './components/breast';
 import Ocean from './components/ocean';
 import Product from './components/product';
-import Test from './components/productInfo';
+import Product1 from './components/productInfo';
+import Product2 from './components/productInfo2';
+import Product3 from './components/productInfo3';
+
 import Influencers from './components/influencers';
 
 
@@ -18,9 +21,11 @@ function App() {
             <Route path="/Aids" render={() => <Aids />} />
             <Route path="/Breast" render={() => <Breast />} />
             <Route path="/Ocean" render={() => <Ocean />} />
-            <Route path="/test" render={() => <Test />} />
             <Route path="/influencers" render={() => <Influencers />} />
-            <Route path="/" render={() => <Test />} />
+            <Route path="/product2" render={() => <Product2 />} />
+            <Route path="/product3" render={() => <Product3 />} />
+
+            <Route path="/" render={() => <Product1 />} />
           </Switch>
       </Router >
     </div>
