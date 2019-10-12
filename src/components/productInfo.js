@@ -55,7 +55,7 @@ class productInfo extends Component {
 
                     <div className="summary5">
                         <div className="add__button" onClick={this.redirect}><p>Our Story</p></div>
-                        <div className="gift__button"><p>Add to Gift Box</p></div>
+                        <div className="gift__button" onClick={this.redirect}><p>Add to Gift Box</p></div>
                     </div>
 
                 </div>

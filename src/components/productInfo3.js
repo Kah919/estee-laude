@@ -59,7 +59,7 @@ For each purchase of this product, Estée Lauder will donate 20% of the retail p
                     <div className="summary5">
                         <div className="add__button"
                         onClick={this.redirect}><p>Add to Cart</p></div>
-                        <div className="gift__button"><p>Add to Gift Box</p></div>
+                        <div className="gift__button" onClick={this.redirect}><p>Add to Gift Box</p></div>
                     </div>
 
                 </div>

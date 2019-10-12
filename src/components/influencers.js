@@ -7,25 +7,20 @@ class Influencers extends Component {
                 <div className="camera"></div>
 
                 <div className="influencer__container">
-                    <div className="img ice"></div>
+                    <div className="img ten"></div>
                     <div className="product l"> <p> Favorite  </p></div>
                     <div className="product r"> <p> Posts  </p></div>
                     <div></div>
                 </div>
 
                 <div className="gallery">
-                    <div className="panda frame"></div>
-                    <div className="grizzly frame"></div>
-                    <div className="smile frame"></div>
+                    <div className="one frame"></div>
+                    <div className="two frame"></div>
+                    <div className="three frame"></div>
                     <div className="pink frame"></div>
-                    <div className="panda frame"></div>
-                    <div className="grizzly frame"></div>
-                    <div className="panda frame"></div>
-                    <div className="grizzly frame"></div>
                     <div className="smile frame"></div>
-                    <div className="pink frame"></div>
-                    <div className="panda frame"></div>
-                    <div className="grizzly frame"></div>
+
+
                 </div>
             </div>
         )

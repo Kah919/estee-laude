@@ -6,14 +6,16 @@ class Ocean extends Component {
         donate: false,
         dollar: 0,
         redirect: false,
-        current: 67243
+        current: 67243,
+        width: 170
     }
 
     donate = () => {
         this.setState({
             donate: true,
             dollar: this.state.dollar += 1,
-            current: this.state.current += 1
+            current: this.state.current += 1,
+            width: this.state.width += 1
         })
     }
 
@@ -67,16 +69,18 @@ class Ocean extends Component {
                             </div>
                             <div className="bar1"></div>
                             <div className="bar2"></div>
-                            {this.state.donate ? <div className="bar3"></div> : null}
+                            {this.state.donate ? <div className="bar3" style={{ width: this.state.width }}></div> : null}
                         </div>
                         
                     </div>
 
                     <div className="sharks"></div>
-
+                    
                     <div className="donate_button">
-                        <div className="donate" onClick={this.donate}> {this.state.donate ? <div className="donated"> ${this.state.dollar} </div> : null} Donate </div>
+                        <div className="donate" onClick={this.donate}> Donate $1 </div>
                     </div>
+
+                    {this.state.donate ? <p className="donated">${this.state.dollar}</p> : null}
                     
                     
                 </div>

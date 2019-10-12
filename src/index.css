@@ -32,7 +32,7 @@
   background: url("./images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1500px; 
+  height: 1700px; 
   position: relative;
 }
 
@@ -46,8 +46,8 @@
 .img {
   background: url("./images/product.png");
   background-size: cover;
-  width: 150px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   margin: 0 auto;
   margin-top: 50%;
 }
@@ -194,10 +194,10 @@
 }
 
 .sharks {
-  margin-top: 80px;
+  margin-top: 70px;
   background: url("./images/sharks.png");
   background-size: contain;
-  height: 200px;
+  height: 220px;
   width: 250px;
 }
 
@@ -210,15 +210,25 @@
   color: white;
   padding: 4px;
   width: 30%;
-  margin: 0 auto;
-  margin-top: 20px;
+
   border-radius: 8px;
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 80px;
 }
 
 .donated {
   background-color: white;
   color: green;
   font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin-left: 101px;
+  margin-bottom: -75px;
+  margin-top: 20px;
+  border: 1px solid green;
+  padding: 5px;
 }
 
 .influencer__container {
@@ -257,7 +267,6 @@
 
 .more__items {
   background: url("./images/cream.png");
-  
 }
 
 .more__caption {
@@ -310,9 +319,9 @@
 .thanks {
   background: url("./images/thanks.png");
   background-size: contain;
-  margin: 30px auto;
-  width: 280px;
-  height: 190px;
+  margin: 10px auto;
+  width: 260px;
+  height: 170px;
 }
 
 .money {
@@ -324,4 +333,35 @@
 .money p {
   font-size: 12px;
   margin-bottom: -20px;
+}
+
+.one {
+  background: url("./images/one.jpg");
+  background-size: contain;
+}
+
+.two {
+  background: url("./images/two.jpg");
+  background-size: contain;
+}
+
+.three {
+  background: url("./images/five.jpg");
+  background-size: contain;
+}
+
+
+
+.six {
+  background: url("./images/six.jpg");
+  background-size: contain;
+}
+
+.item__container {
+  height: 1000px;
+}
+
+.ten {
+  background: url("./images/ten.jpg");
+  background-size: contain;
 }
