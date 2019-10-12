@@ -19,8 +19,10 @@ class Influencers extends Component {
                     <div className="three frame"></div>
                     <div className="pink frame"></div>
                     <div className="smile frame"></div>
-
-
+                    <div className="one frame"></div>
+                    <div className="two frame"></div>
+                    <div className="three frame"></div>
+  
                 </div>
             </div>
         )

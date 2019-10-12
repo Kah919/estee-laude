@@ -32,7 +32,7 @@
   background: url("./images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1700px; 
+  height: 1400px; 
   position: relative;
 }
 
@@ -47,7 +47,7 @@
   background: url("./images/product.png");
   background-size: cover;
   width: 180px;
-  height: 180px;
+  height: 200px;
   margin: 0 auto;
   margin-top: 50%;
 }
@@ -357,11 +357,10 @@
   background-size: contain;
 }
 
-.item__container {
-  height: 1000px;
-}
 
 .ten {
   background: url("./images/ten.jpg");
   background-size: contain;
+  width: 250px;
+  height: 250px;
 }
