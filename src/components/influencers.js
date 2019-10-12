@@ -12,12 +12,12 @@ class Influencers extends Component {
                 </div>
 
                 <div className="gallery">
-                    <div className="panda"></div>
-                    <div className="grizzly"></div>
-                    <div className="grizzly"></div>
-                    <div className="panda"></div>
-                    <div className="panda"></div>
-                    <div className="grizzly"></div>
+                    <div className="panda frame"></div>
+                    <div className="grizzly frame"></div>
+                    <div className="grizzly frame"></div>
+                    <div className="panda frame"></div>
+                    <div className="panda frame"></div>
+                    <div className="grizzly frame"></div>
                 </div>
             </div>
         )

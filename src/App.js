@@ -20,7 +20,7 @@ function App() {
             <Route path="/Ocean" render={() => <Ocean />} />
             <Route path="/test" render={() => <Test />} />
             <Route path="/influencers" render={() => <Influencers />} />
-            <Route path="/" render={() => <Home />} />
+            <Route path="/" render={() => <Test />} />
           </Switch>
       </Router >
     </div>

@@ -38,6 +38,14 @@ class productInfo extends Component {
                     </div>
 
                 </div>
+
+                <h3 className="more__caption"> More products you might like </h3>
+
+                <div className="more__products">
+                    <div className="more__items frame"></div>
+                    <div className="more__items frame"></div>
+                    <div className="more__items frame"></div>
+                </div>
             </div>
         )
     }
