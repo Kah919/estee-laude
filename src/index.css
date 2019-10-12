@@ -77,11 +77,11 @@
 }
 
 .l {
-  margin-top: -65px;
+  margin-top: -45px;
 }
 
 .r {
-  margin-bottom: -80px;
+  margin-bottom: -160px;
 }
 
 .product p {
@@ -175,17 +175,18 @@
 }
 
 .add__button {
-  background-color: #90ee90;
+  background-color: black;
+  color: white;
   width: 90%;
-  border-radius: 8%;
+  border-radius: 10px;
   margin-bottom: 3%;
 }
 
 .gift__button {
-  background-color: black;
+  background-color: green;
   color: white;
   width: 90%;
-  border-radius: 8%;
+  border-radius: 10px;
 }
 
 .column3 p {
@@ -193,6 +194,7 @@
 }
 
 .sharks {
+  margin-top: 80px;
   background: url("./images/sharks.png");
   background-size: contain;
   height: 200px;
@@ -221,7 +223,7 @@
 
 .influencer__container {
   display: grid;
-  grid-template-columns: 18fr 1fr 1fr 4fr;
+  grid-template-columns: 20fr 2fr 2fr 4fr;
 }
 
 .gallery {
@@ -275,12 +277,34 @@
              0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 
-.bar {
-  background-color: #F3F3F3;
-  width: 200px;
-  height: 20px;;
+
+
+.bar1 {
+  background-color: #85D7D4;
+  position: absolute;
+  width: 160px;
+  height: 20px;
   margin: 20px auto;
-  border-radius: 20px; 
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.bar2 {
+  background-color: #F3F3F3;
+  position: absolute;
+  width: 250px;
+  height: 20px;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+.bar3 {
+  background-color: green;
+  position: absolute;
+  width: 170px;
+  height: 20px;
+  margin: 20px auto;
+  border-radius: 20px;
 }
 
 .thanks {
@@ -288,5 +312,16 @@
   background-size: contain;
   margin: 30px auto;
   width: 280px;
-  height: 200px;
+  height: 190px;
+}
+
+.money {
+  display: flex;
+  justify-content: space-between;
+  position: relative
+}
+
+.money p {
+  font-size: 12px;
+  margin-bottom: -20px;
 }

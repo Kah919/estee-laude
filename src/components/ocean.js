@@ -1,21 +1,39 @@
 import React, { Component } from 'react';
+import { Redirect } from "react-router-dom";
 
 class Ocean extends Component {
     state = {
         donate: false,
-        dollar: 0
+        dollar: 0,
+        redirect: false,
+        current: 67243
     }
 
     donate = () => {
         this.setState({
             donate: true,
-            dollar: this.state.dollar += 1
+            dollar: this.state.dollar += 1,
+            current: this.state.current += 1
         })
     }
+
+    redirect = () => {
+        this.setState({
+            redirect: true
+        })
+    }
+
+    renderRedirect = () => {
+        if(this.state.redirect) {
+            return <Redirect to={`/influencers`}/>
+        }
+    }
+
 
     render() {
         return(
             <div className="item__container ocean__container">
+                {this.renderRedirect()}
                 <div className="camera"></div>
                 <div className="img__container ocean">
                     <div className="ocean__img"></div>
@@ -40,12 +58,21 @@ class Ocean extends Component {
 
                     <div>
                         <h3>Oceans fund raised as of 2019</h3>
-                        <div className="bar"></div>
+                        {this.state.donate ? <div className="thanks" onClick={this.redirect}></div> : null}
+                        <div className="outer">
+                            <div className="money">
+                                <p className="current">$45,337</p>
+                                <p className="now">${this.state.current}</p>
+                                <p className="goal">$100,000</p>
+                            </div>
+                            <div className="bar1"></div>
+                            <div className="bar2"></div>
+                            {this.state.donate ? <div className="bar3"></div> : null}
+                        </div>
+                        
                     </div>
 
                     <div className="sharks"></div>
-                    
-                    {this.state.donate ? <div className="thanks"></div> : null}
 
                     <div className="donate_button">
                         <div className="donate" onClick={this.donate}> {this.state.donate ? <div className="donated"> ${this.state.dollar} </div> : null} Donate </div>

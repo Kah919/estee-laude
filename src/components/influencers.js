@@ -20,6 +20,12 @@ class Influencers extends Component {
                     <div className="pink frame"></div>
                     <div className="panda frame"></div>
                     <div className="grizzly frame"></div>
+                    <div className="panda frame"></div>
+                    <div className="grizzly frame"></div>
+                    <div className="smile frame"></div>
+                    <div className="pink frame"></div>
+                    <div className="panda frame"></div>
+                    <div className="grizzly frame"></div>
                 </div>
             </div>
         )
